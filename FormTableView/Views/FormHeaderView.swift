@@ -25,6 +25,14 @@ class FormHeaderView: UITableViewHeaderFooterView {
             label.translatesAutoresizingMaskIntoConstraints = false
             return label
         }()
+        var subTitleLabels: UILabel = {
+            var label = UILabel()
+            label.text = "Mini form groups multi-entry is one page"
+            label.textColor = .systemGray
+            label.font = .systemFont(ofSize: 15)
+            label.translatesAutoresizingMaskIntoConstraints = false
+            return label
+        }()
         var data: PersonModel! {
             didSet {
                 filldata()
